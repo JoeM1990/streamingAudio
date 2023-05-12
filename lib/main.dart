@@ -49,13 +49,13 @@ class MyApp extends StatefulWidget {
     state.changeTheme(newThemeMode);
   }
 
-  static Future<void> setLocale(
-    BuildContext context,
-    Locale newLocale,
-  ) async {
-    final state = context.findAncestorStateOfType<_MyAppState>()!;
-    state.changeLanguage(newLocale);
-  }
+  // static Future<void> setLocale(
+  //   BuildContext context,
+  //   Locale newLocale,
+  // ) async {
+  //   final state = context.findAncestorStateOfType<_MyAppState>()!;
+  //   state.changeLanguage(newLocale);
+  // }
 
   static Future<void> setAccentColor(
     BuildContext context,
@@ -71,7 +71,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Locale _locale = const Locale('en', '');
+  // Locale _locale = const Locale('en', '');
 
   void changeTheme(ThemeMode newThemeMode) {
     setState(() {
@@ -79,11 +79,11 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  void changeLanguage(Locale locale) {
-    setState(() {
-      _locale = locale;
-    });
-  }
+  // void changeLanguage(Locale locale) {
+  //   setState(() {
+  //     _locale = locale;
+  //   });
+  // }
 
   void changeAccentColor(Color newAccentColor, bool systemColorStatus) {
     setState(() {
@@ -100,10 +100,10 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _locale = Locale(
-      codes[Hive.box('settings').get('language', defaultValue: 'English')
-          as String]!,
-    );
+    // _locale = Locale(
+    //   codes[Hive.box('settings').get('language', defaultValue: 'English')
+    //       as String]!,
+    // );
     themeMode = Hive.box('settings').get('themeMode', defaultValue: 'system') ==
             'system'
         ? ThemeMode.system
@@ -139,33 +139,33 @@ class _MyAppState extends State<MyApp> {
                   colorScheme: lightColorScheme,
                 )
               : getAppLightTheme(),
-          localizationsDelegates: const [
-            AppLocalizations.delegate,
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-          supportedLocales: const [
-            Locale('en', ''),
-            Locale('ka', ''),
-            Locale('zh', ''),
-            Locale('nl', ''),
-            Locale('fr', ''),
-            Locale('de', ''),
-            Locale('he', ''),
-            Locale('hi', ''),
-            Locale('hu', ''),
-            Locale('id', ''),
-            Locale('it', ''),
-            Locale('pl', ''),
-            Locale('pt', ''),
-            Locale('es', ''),
-            Locale('ta', ''),
-            Locale('tr', ''),
-            Locale('uk', ''),
-            Locale('ur', '')
-          ],
-          locale: _locale,
+          // localizationsDelegates: const [
+          //   AppLocalizations.delegate,
+          //   GlobalMaterialLocalizations.delegate,
+          //   GlobalWidgetsLocalizations.delegate,
+          //   GlobalCupertinoLocalizations.delegate,
+          // ],
+          // supportedLocales: const [
+          //   Locale('en', ''),
+          //   Locale('ka', ''),
+          //   Locale('zh', ''),
+          //   Locale('nl', ''),
+          //   Locale('fr', ''),
+          //   Locale('de', ''),
+          //   Locale('he', ''),
+          //   Locale('hi', ''),
+          //   Locale('hu', ''),
+          //   Locale('id', ''),
+          //   Locale('it', ''),
+          //   Locale('pl', ''),
+          //   Locale('pt', ''),
+          //   Locale('es', ''),
+          //   Locale('ta', ''),
+          //   Locale('tr', ''),
+          //   Locale('uk', ''),
+          //   Locale('ur', '')
+          // ],
+          // locale: _locale,
           initialRoute: '/',
           routes: {
             '/': (context) => Musify(),

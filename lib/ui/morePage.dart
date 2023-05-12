@@ -334,12 +334,12 @@ class SettingsCards extends StatelessWidget {
                                   'language',
                                   availableLanguages[index],
                                 );
-                                MyApp.setLocale(
-                                  context,
-                                  Locale(
-                                    codes[availableLanguages[index]]!,
-                                  ),
-                                );
+                                // MyApp.setLocale(
+                                //   context,
+                                //   Locale(
+                                //     codes[availableLanguages[index]]!,
+                                //   ),
+                                // );
 
                                 showToast(
                                   AppLocalizations.of(context)!.languageMsg,
