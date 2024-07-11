@@ -290,7 +290,7 @@ class MyAudioHandler extends BaseAudioHandler {
 
   @override
   Future customAction(String name, [Map<String, dynamic>? extras]) async {
-    if (name == 'dispose') {
+    if ( name == 'dispose' ) {
       await audioPlayer.dispose();
       await super.stop();
     }
