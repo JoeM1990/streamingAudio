@@ -329,18 +329,6 @@ class SettingsCards extends StatelessWidget {
                                 style: TextStyle(color: accent.primary),
                               ),
                               onTap: () {
-                                // addOrUpdateData(
-                                //   'settings',
-                                //   'language',
-                                //   availableLanguages[index],
-                                // );
-                                // MyApp.setLocale(
-                                //   context,
-                                //   Locale(
-                                //     codes[availableLanguages[index]]!,
-                                //   ),
-                                // );
-
                                 showToast(
                                   AppLocalizations.of(context)!.languageMsg,
                                 );
