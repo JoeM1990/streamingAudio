@@ -1,7 +1,3 @@
-// pub: https://pub.dev/packages/delayed_display
-// license: https://raw.githubusercontent.com/ThomasEcalle/delayed_display/master/LICENSE
-// remade (not original)
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
