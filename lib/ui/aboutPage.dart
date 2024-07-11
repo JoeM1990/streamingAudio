@@ -84,16 +84,16 @@ class AboutCards extends StatelessWidget {
                   image: DecorationImage(
                     fit: BoxFit.fill,
                     image: NetworkImage(
-                      'https://avatars.githubusercontent.com/u/79704324?v=4',
+                      'https://avatars.githubusercontent.com/u/70669743?v=4',
                     ),
                   ),
                 ),
               ),
               title: const Text(
-                'Valeri Gokadze',
+                'Jonathan MONKILA',
               ),
               subtitle: const Text(
-                'Web/APP Developer',
+                'Software Engineer',
               ),
               trailing: Wrap(
                 children: <Widget>[
@@ -105,7 +105,7 @@ class AboutCards extends StatelessWidget {
                     tooltip: 'Github',
                     onPressed: () {
                       launchURL(
-                        Uri.parse('https://github.com/gokadzev'),
+                        Uri.parse('https://github.com/joeM1990'),
                       );
                     },
                   ),
