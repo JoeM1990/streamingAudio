@@ -195,9 +195,8 @@ class _PlaylistPageState extends State<PlaylistPage> {
                       shrinkWrap: true,
                       physics: const BouncingScrollPhysics(),
                       addAutomaticKeepAlives:
-                          false, // may be problem with lazyload if it implemented
+                          false, 
                       addRepaintBoundaries: false,
-                      // Need to display a loading tile if more items are coming
                       itemCount:
                           _hasMore ? _songsList.length + 1 : _songsList.length,
                       itemBuilder: (BuildContext context, int index) {
