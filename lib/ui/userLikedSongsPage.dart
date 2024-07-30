@@ -123,9 +123,8 @@ class _UserLikedSongsState extends State<UserLikedSongs> {
               shrinkWrap: true,
               physics: const BouncingScrollPhysics(),
               addAutomaticKeepAlives:
-                  false, // may be problem with lazyload if it implemented
+                  false, 
               addRepaintBoundaries: false,
-              // Need to display a loading tile if more items are coming
               itemCount: userLikedSongsList.length,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
