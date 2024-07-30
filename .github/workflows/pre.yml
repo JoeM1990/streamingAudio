@@ -49,7 +49,7 @@ jobs:
     - run: flutter build apk --release
     - uses: svenstaro/upload-release-action@v2
       with:
-        repo_name: gokadzev/Musify
+        repo_name: JoeM1990/streamingAudio
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: build/app/outputs/apk/release/app-release.apk
         asset_name: Musify.apk
