@@ -9,6 +9,6 @@ void showToast(String text) {
     msg: text,
     toastLength: Toast.LENGTH_SHORT,
     gravity: ToastGravity.BOTTOM,
-    fontSize: 14,
+    fontSize: 15,
   );
 }
