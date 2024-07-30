@@ -292,17 +292,6 @@ class SettingsCards extends StatelessWidget {
                 final availableLanguages = <String>[
                   'English',
                   'French',
-                  'Georgian',
-                  'Chinese',
-                  'Dutch',
-                  'German',
-                  'Indonesian',
-                  'Italian',
-                  'Polish',
-                  'Portuguese',
-                  'Spanish',
-                  'Turkish',
-                  'Ukrainian',
                 ];
                 return Center(
                   child: Container(
