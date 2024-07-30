@@ -7,8 +7,7 @@ import 'package:musify/services/ext_storage.dart';
 
 String? version;
 late String dlUrl;
-const apiUrl =
-    '';
+const apiUrl = '';
 
 Future<bool> checkAppUpdates() async {
   version ??= packageInfo.version;
