@@ -252,8 +252,8 @@ Future<List<Map<String, int>>> getSkipSegments(String id) async {
     final res = await http.get(
       Uri(
         scheme: 'https',
-        host: 'sponsor.ajay.app',
-        path: '/api/skipSegments',
+        host: '',
+        path: '',
         queryParameters: {
           'videoID': id,
           'category': [
