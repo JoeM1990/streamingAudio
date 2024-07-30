@@ -30,7 +30,7 @@ class ExtStorageProvider {
 
           // getting main path
           final newPath = directory!.path
-              .replaceFirst('Android/data/com.gokadzev.musify/files', dirName);
+              .replaceFirst('Android/data/com.monkilatech.musify/files', dirName);
 
           directory = Directory(newPath);
 
@@ -51,7 +51,7 @@ class ExtStorageProvider {
             }
           }
         } else {
-          return throw 'something went wrong';
+          return throw 'Something went wrong';
         }
       } else if (Platform.isIOS) {
         directory = await getApplicationDocumentsDirectory();
