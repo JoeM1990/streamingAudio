@@ -6,8 +6,8 @@ open_collective:
 ko_fi: 
 tidelift: 
 community_bridge: 
-liberapay: # Replace with a single Liberapay username
-issuehunt: # Replace with a single IssueHunt username
-otechie: # Replace with a single Otechie username
+liberapay: 
+issuehunt: 
+otechie: 
 lfx_crowdfunding: 
 custom: ['https://www.buymeacoffee.com/joemonkila] 
