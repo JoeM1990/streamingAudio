@@ -7,8 +7,6 @@
 </p>
 </p>
 
-
-
   <h3 align="center">Features</h3>
   <p align="center">
     Online Song Search :mag:<br>
